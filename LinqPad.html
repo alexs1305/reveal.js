@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>Why LinqPad</h3>
+				<p> cos its easy!</p>
+			</section>
+			<section>
+				<h1>Main benefits</h1>
+				<ul>
+					<li>Quick snippets of code, no ceremony</li>
+					<li>Test integrations</li>
+					<li>POC apps</li>
+					<li>Easy output to console</li>
+					<li>Supports SQL links (LinqToSql)</li>
+				</ul>
+			</section>
+			<section data-background="#ff6961">
+				<h1>The old way</h1>
+				<ul>
+					<li>Create new VS project</li>
+					<li>Create classes</li>
+					<li>Go to use method</li>
+					<li>Get fustrated at all extra lines of code needed</li>
+					<li>Wait for it to build</li>
+					<li>Give up</li>
+				</ul>
+			</section>
+			<section data-background="#a4ffa9">
+				<h1>The new way (using LinqPad)</h1>
+				<ul>
+					<li>Start LinqPad</li>
+					<li>Write new command</li>
+					<li>Run command</li>
+					<li>See output after code has run, and it stays there!</li>
+					<ul>
+
+			</section>
+			<section>
+				<p>ok, slight exaggeration</p>
+				<p>but really it was only slight...</p>
+			</section>
+			<section>
+				<q>
+					So really where would I use it
+				</q>
+				<p>lets take a look</p>
+			</section>
+			<section>
+				<h1>Here are some examples</h1>
+				<section>Small new fluent expression</section>
+				<section>Small new method</section>
+				<section>Small new class</section>
+				<section>Extension methods</section>
+			</section>
+			<section>
+				<h2>Whats the catch</h2>
+				<p>Obviously it costs money for all the nice bits</p>
+				<p>but the free version comes full functional (just fiddly)!</p>
+			</section>
+			<section>
+				<h3>Try it here <a href="https://www.linqpad.net/">https://www.linqpad.net/</a></h3>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
